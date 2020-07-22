@@ -1,0 +1,12 @@
+SysId                                                  DownVal     UpVal            SysType      Constr
+ATLAS_EG_RESOLUTION_ALL                                0           0                      1           1
+ATLAS_pdf_sig_gg                                       1.000000    1.000000               1           1
+ATLAS_pdf_sig_qq                                       1.000000    1.000000               1           1
+ATLAS_scale_sig_ttH                                    1.000000    1.000000               1           1
+ATLAS_HiggsMassVariation                               1.000000    1.000000               1           1
+ATLAS_SignalComposition_ggH                            1.16655     0.876495               1           1
+ATLAS_SignalComposition_VBF                            1.00084     1.00103                1           1
+ATLAS_SignalComposition_WH                             1.00082     1.00186                1           1
+ATLAS_SignalComposition_ZH                             1.00049     1.00138                1           1
+ATLAS_SignalComposition_ttH                            1           4.00746                1           1
+ATLAS_SignalComposition_bbH                            1.00184     1.00003                1           1

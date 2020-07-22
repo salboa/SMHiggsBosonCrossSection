@@ -1,0 +1,10 @@
+[inclusive]
+ATLAS_scale_qqZZ = 0.960 1.046
+[4mu]
+ATLAS_scale_qqZZ = 0.967 1.033
+[4e]
+ATLAS_scale_qqZZ = 0.946 1.069
+[2mu2e]
+ATLAS_scale_qqZZ = 0.958 1.050
+[2e2mu]
+ATLAS_scale_qqZZ = 0.960 1.047

@@ -1,0 +1,4 @@
+SysId                                                  DownVal     UpVal            SysType      Constr
+ATLAS_EG_RESOLUTION_ALL                                0           0                      1           1
+ATLAS_pdf_ggZZ                                         0.400000    1.600000               1           1
+ATLAS_scale_ggZZ                                       0.920000    1.080000               1           1

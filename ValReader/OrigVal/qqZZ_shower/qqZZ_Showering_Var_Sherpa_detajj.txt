@@ -1,0 +1,8 @@
+[bin0]
+ATLAS_ShowerQSF_qqZZ = 0.974 1.053
+ATLAS_ShowerCKKW_qqZZ = 0.994 0.995
+ATLAS_ShowerCSSKIN_qqZZ = 0.949 1.051
+[bin1]
+ATLAS_ShowerQSF_qqZZ = 0.976 1.036
+ATLAS_ShowerCKKW_qqZZ = 1.054 0.985
+ATLAS_ShowerCSSKIN_qqZZ = 0.964 1.036

@@ -1,0 +1,4 @@
+SysID		        UpVal    DownVal   SysType    Constr
+Luminosity	        1.032	 0.968	      1	         1
+ATLAS_BR_HZZSig	        1.022	 0.978	      1	         1
+ATLAS_Shower_Sig	1.02	 0.98	      1	         1

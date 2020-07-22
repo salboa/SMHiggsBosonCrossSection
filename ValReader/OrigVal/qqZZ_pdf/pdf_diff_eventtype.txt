@@ -1,0 +1,10 @@
+[inclusive]
+ATLAS_pdf_qqZZ = 0.980 1.020
+[4mu]
+ATLAS_pdf_qqZZ = 0.980 1.020
+[4e]
+ATLAS_pdf_qqZZ = 0.980 1.020
+[2mu2e]
+ATLAS_pdf_qqZZ = 0.980 1.020
+[2e2mu]
+ATLAS_pdf_qqZZ = 0.980 1.020

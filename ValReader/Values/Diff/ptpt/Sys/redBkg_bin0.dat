@@ -1,0 +1,5 @@
+SysId                                                  DownVal     UpVal            SysType      Constr
+ATLAS_ZJET_llmumu_stat                                 0.928276    1.07172                1           1
+ATLAS_ZJET_llee_stat                                   0.898505    1.1015                 1           1
+ATLAS_ZJET_llmumu_sys                                  0.875867    1.12413                1           1
+ATLAS_ZJET_llee_sys                                    0.832669    1.16733                1           1

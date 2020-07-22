@@ -1,0 +1,4 @@
+[bin0]
+ATLAS_scale_qqZZ = 0.808 1.293
+[bin1]
+ATLAS_scale_qqZZ = 0.833 1.250

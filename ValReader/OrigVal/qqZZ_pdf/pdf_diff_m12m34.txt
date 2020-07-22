@@ -1,0 +1,10 @@
+[bin0]
+ATLAS_pdf_qqZZ = 0.981 1.019
+[bin1]
+ATLAS_pdf_qqZZ = 0.980 1.020
+[bin2]
+ATLAS_pdf_qqZZ = 0.980 1.020
+[bin3]
+ATLAS_pdf_qqZZ = 0.980 1.020
+[bin4]
+ATLAS_pdf_qqZZ = 0.980 1.020

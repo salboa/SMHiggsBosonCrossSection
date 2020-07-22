@@ -1,58 +1,79 @@
-Analysis packages aiming to measure the fiducial and differential cross section
-of the Higgs Boson using its 4-leptons decay channel.
-
 #              Directories Structure              #
+
+## LatexTemplate ##
+
+  - standard template for slides making
+
+## MakeUnfoldedPlots ##
+
+  - MakeUnfoldPlots.C -> script used to make unfolded plots
+  - RunMakeUnfold.py  -> python script handling MakeUnfoldPlots.C
 
 ## MiniTreeReader ##
 
-   Refer to in-folder README for more information
-
-  - CreateInputs class  -> used to produce histograms and all needed inputs
-  - EventLoop class     -> used to read minitrees and loop over trees
-  - EvtListScan program -> used to compare 2 lists of events and find
-                           (un)matching
-  - GetMiniTrees.py     -> used to download to local cluster inputs minitrees
-                           ROOT files
-  - RunCreateInputs.py  -> used to submit jobs and to handle CreateInputs class
-  
+  - MakeInput.C     -> script used to read HZZ minitrees
+  - RunMakeInput.py -> python script handling MakeInput.C
+  - doPlots.C       -> distributions maker
+  - PrintYields.C   -> prints signal, bkg and data yields
+  - ShapeSysVar     -> arrange shape systematic histograms
 
 ## RooAddOn ##
 
-  Refer to in-folder README for more information
-
   - Contains addon needed by XsecClass
   - PatchROOT.py -> patches ROOT source
+  - refer to its specific README to apply patch and compile ROOT
 
+## ValReader ##
+
+  - ReadFiles.C     -> script to translate systematic values files from
+    		       standard input to WorkSpaceMaker like input
+  - ProduceFiles.py -> Make input data files for WorkSpaceMaker class, handling
+    		       ReadFiles.C for systematic values
 
 ## XsecClass ##
 
-  Refer to in-folder README for more information
+  - for fiducial and differential xsec studies
+  - just type 'make' to compile it
+  - to have a look to all possible options of the clase, type
+    './WorkSpaceMaker --help'; below the output
+```
+WorkSpaceMaker: Make WorkSpace for HZZ4l xsec measurement!!
+  Usage  :  WorkSpaceMaker [Options]
+             --Variable [Define variable to be used -> possible choices:
+                         'pt', 'pt0j', 'pt1j', 'pt2j', 'm12', 'm34', 'y'
+                         'njet', 'cts', 'ljpt']
+             --Channel  [Define channel to be used -> possible choices:
+                         'incl', '4mu', '4e', '2mu2e', '2e2mu']
+             --FileName [Set ROOT filename to be used: default is ' ']
+             --DataPath [Specify path to CF, A, xsec, r files: 
+                         default is '']
+             --FidChan [Enable Fiducial single channel xsec measurement:
+                         default is 'false']
+             --FidTotal [Enable Fiducial total xsec measurement:
+                         default is 'false']
+             --Fid4l [Enable Fiducial total xsec measurement for 4l case
+                      (4e+4mu): default is 'false']
+             --Fid2l2l [Enable Fiducial total xsec measurement for 2l2l
+                        case (2e2mu+2mu2e): default is 'false']
+             --FidSum [Enable Fiducial xsec measurement summing all
+                       channels (4e+4mu+2e2mu+2mu2e): default is 'false']
+             --do2D     [Enable 2D: default is 'false'
+             --addSys   [Use Systematics: default is 'false']
+             --debug    [Set debug mode: default is 'false']
+             --verbose  [Set verbose mode: default is 'false']
+             --lumi     [Set luminosity: default is '35' 1/fb]
+             --doFit    [Enable fit at the end of ws creation]
+             --parallel [Enable fit in parallel mode preliminary]
+             --help     [Print this help]
+  
+          -------------------   REMARKS -----------------
+             --Variable option is needed when none of fiducial
+                        measurement flag is enabled.
+             --Channel option is needed when none of fiducial
+                        measurement flag is enabled, but for now 'incl'
+                        is used as default
+```
 
-  - WorkSpaceMaker class -> used to read run fiducial and differential
-                            cross section measurements (it makes also a ROOT
-			    workspace)
-  - RunFit.py             -> used to submit jobs and handle WorkSpaceMaker class
-
-
-## Plotting Tools ##
-
-  Refer to in-folder README for more information
-
-  - DrawFactors program -> used to make histograms of Acceptance, Correction
-    			   Factor, Efficiency and Migration Matrices,
-			   non-fiducial fractions and phase-space fraction
-
-
-## Utils ##
-
-   - contains all common features shared along classes inside the whole package
-
-
-## GetValues ##
-
-   - contains a cross-check code evaluating in another way the quantities needed
-     to perform the fiducial and differential cross section measurement
-     
 ### Fiducial measurement ###
 
   - run fiducial xsec on single channels
