@@ -1,0 +1,22 @@
+[bin0]
+ATLAS_scale_qqZZ = 0.966 1.023
+[bin1]
+ATLAS_scale_qqZZ = 0.980 1.017
+[bin2]
+ATLAS_scale_qqZZ = 0.946 1.051
+[bin3]
+ATLAS_scale_qqZZ = 0.799 1.341
+[bin4]
+ATLAS_scale_qqZZ = 0.969 1.044
+[bin5]
+ATLAS_scale_qqZZ = 0.925 1.086
+[bin6]
+ATLAS_scale_qqZZ = 0.906 1.117
+[bin7]
+ATLAS_scale_qqZZ = 0.893 1.140
+[bin8]
+ATLAS_scale_qqZZ = 0.895 1.139
+[bin9]
+ATLAS_scale_qqZZ = 0.823 1.264
+[bin10]
+ATLAS_scale_qqZZ = 0.779 1.344

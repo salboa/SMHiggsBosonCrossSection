@@ -1,0 +1,4 @@
+[bin0]
+ATLAS_pdf_qqZZ = 0.986 1.014
+[bin1]
+ATLAS_pdf_qqZZ = 0.988 1.012
